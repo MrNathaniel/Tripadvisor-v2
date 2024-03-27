@@ -3,17 +3,63 @@
 }
 
 header {
-  height: 59px;
+  height: 60px;
   width: 1920px;
-  display: flex;
+
   border: red solid 2px;
 }
 
-main {
+.header-container {
+  width: 1135px;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
 }
 
-.Logo {
+.header-container img {
   height: 40px;
   width: 186px;
+  padding-top: 19px;
+  object-fit: cover;
+}
+
+.header-container i {
+  height: 25px;
+  padding-top: 19px;
+}
+
+section {
+  border: blue solid 2px;
+}
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+nav {
+  margin-top: 36px;
+  margin-bottom: 26px;
+}
+.photo-container {
+  border: solid greenyellow 2px;
+  width: 1135px;
+  height: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.bloc-left img {
+  width: 50%;
+  height: 400px;
+
+  object-fit: cover;
+  object-position: left;
+}
+.bloc-right img {
+  width: 50%;
+  height: 400px;
+
+  object-fit: cover;
+  object-position: right;
 }

@@ -4,17 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tripadvisor</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <script src="https://kit.fontawesome.com/5b9c0e6b7c.js">
       crossorigin="anonymous"
     </script>
   </head>
   <body>
     <header>
-      <div class="Logo" alt="Logo">
+      <div class="header-container" alt="composants du header">
         <img src="./assets/images/Tripadvisor_logo.svg" />
+        <div class="header-i" alt="i-du-header">
+          <i class="fa-solid fa-pencil"> Avis</i>
+          <i class="fa-solid fa-heart"> Voyages</i>
+          <i class="fa-solid fa-bell"> Alertes</i>
+          <button>Connectez-vous</button>
+          <i class="fa-solid fa-cart-shopping"> Panier</i>
+        </div>
       </div>
     </header>
+    <main>
+      <section class="hero-container" alt="hero">
+        <h1>Explorez Helsinki</h1>
+        <h4>
+          Les revenus influencent le choix des expériences présentées sur cette
+          page : <a href="en savoir plus"> en savoir plus</a>
+        </h4>
+        <nav>
+          Hôtel <i class="fa-solid fa-bed"> </i> Locations de vacances
+          <i class="fa-solid fa-house"> </i> Activités
+          <i class="fa-solid fa-ticket"> </i> Restaurant
+          <i class="fa-solid fa-utensils"></i> Forums de voyage
+          <i class="fa-solid fa-comments"></i> Plus
+          <i class="fa-solid fa-ellipsis"> </i>
+        </nav>
+      </section>
+      <section class="photo-container" alt="photos-ville">
+        <div class="bloc-left">
+          <img src="./assets/images/137529-Helsinki-Cathedral.avif" />
+        </div>
+        <div class="bloc-right">
+          <img src="./assets/images/musée-national.jpg" />
+          <img src="./assets/images/allas-sea-pool-neige.jpeg" />
+        </div>
+      </section>
+    </main>
   </body>
 </html>
