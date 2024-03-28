@@ -128,8 +128,19 @@ h3 {
 }
 
 .have-fun-pics {
-  width: 200px;
+  width: 100%;
   display: flex;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.example::-webkit-scrollbar  /* chrome*/ {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .have-fun h5 {
@@ -141,7 +152,12 @@ h3 {
   width: 100%;
 }
 
-.have-fun-pics i {
+.fa-circle {
+  color: green;
+  font-size: 12px;
+}
+
+.fa-circle-half-stroke {
   color: green;
   font-size: 12px;
 }
@@ -173,4 +189,25 @@ h3 {
 }
 .fortress-pic {
   width: 267px;
+}
+.relativ-div {
+  position: relative;
+}
+
+.relativ-div-hidden {
+  position: relative;
+  overflow: hidden;
+}
+.fa-heart {
+  position: absolute;
+  background-color: white;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  color: black;
+}
+.award img {
+  height: 20px;
+  width: 20px;
 }
