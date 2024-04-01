@@ -202,9 +202,12 @@ H2 {
 }
 
 p {
-  width: 50%;
+  /*width: 50%;*/
   font-size: 20px;
   color: #424242;
+}
+.info-p {
+  width: 50%;
 }
 .not-miss-container {
   margin-top: 100px;
@@ -222,12 +225,13 @@ h3 {
   border: solid purple 2px;
   height: 300px;
   display: flex;
+  flex: 1;
   margin-bottom: 88px;
 }
 
 .have-fun-pics {
-  width: 100%;
   display: flex;
+  flex: 3;
   overflow-x: hidden;
   overflow: scroll;
 }
@@ -280,16 +284,18 @@ h3 {
 }
 .have-fun img {
   object-fit: cover;
-  width: 267px;
+  width: 270px;
   height: 200px;
   border-radius: 10px;
   padding-right: 5px;
 }
-.fortress-pic {
-  width: 267px;
+.caroussel-pic {
+  width: 270px;
+  flex-shrink: 0;
 }
 .relativ-div {
   position: relative;
+  flex-shrink: 0;
 }
 
 .relativ-div-hidden {
@@ -312,24 +318,46 @@ h3 {
 
 .rest-div {
   border: solid 2px violet;
-
+  display: flex;
   height: 300px;
   width: 1135px;
 }
 
 .left-part {
   height: 100%;
-  width: 300px;
+  flex: 1;
   padding-bottom: 145px;
-  padding-right: 55px;
 }
 
 .rest-pics {
   display: flex;
-  width: 835px;
+  flex: 3;
   height: 100%;
+  gap: 5px;
+  overflow-x: hidden;
+  overflow: scroll;
 }
-.relativ-rest-pics img {
+.hotel img {
   height: 204px;
   width: 268px;
+  border-radius: 5px;
+}
+
+.rest-pics::-webkit-scrollbar  /* chrome*/ {
+  display: none;
+}
+
+.rest-pics {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.left-part h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.left-part p {
+  padding-top: 37px;
+  padding-right: 78px;
 }
