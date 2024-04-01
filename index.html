@@ -6,6 +6,10 @@
     <title>Tripadvisor</title>
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://kit.fontawesome.com/5b9c0e6b7c.js">
       crossorigin="anonymous"
     </script>
@@ -13,48 +17,67 @@
   <body>
     <header>
       <div class="header-container" alt="composants du header">
-        <img src="./assets/images/Tripadvisor_logo.svg" />
-        <div class="header-i" alt="i-du-header">
-          <i class="fa-solid fa-pencil"> Avis</i>
-          <i class="fa-solid fa-heart"> Voyages</i>
-          <i class="fa-solid fa-bell"> Alertes</i>
-          <button>Connectez-vous</button>
-          <i class="fa-solid fa-cart-shopping"> Panier</i>
+        <div class="upper-bloc">
+          <img class="logo" src="./assets/images/Tripadvisor_logo.svg" />
+          <div class="topnav">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="search..." />
+          </div>
+          <div class="header-i" alt="i-du-header">
+            <i>Découvrir</i>
+            <i>Voyages</i>
+            <i>Avis</i>
+            <i class="fa-solid fa-earth-europe"> | E U R</i>
+            <button class="connect-button">Se connecter</button>
+          </div>
         </div>
+        <span class="header-span">
+          <nav class="header-nav">
+            <i class="fa-solid fa-map-location-dot"> Helsinki</i>
+            <i>Hôtel</i>
+            <i>Activités</i>
+            <i>Restaurant</i>
+            <i>vols</i>
+            <i>Locations de vacances</i>
+            <i>Croisières</i>
+            <i>Voiture de location</i>
+            <i>Forums</i>
+          </nav></span
+        >
       </div>
     </header>
     <main>
       <section class="hero-container" alt="hero">
-        <h1>Explorez Helsinki</h1>
-        <h4>
+        <h1><span class="title-span">Explorez</span> Helsinki</h1>
+        <h4 class="first-h4">
           Les revenus influencent le choix des expériences présentées sur cette
           page : <a href="en savoir plus"> en savoir plus</a>
         </h4>
-        <nav>
-          Hôtel <i class="fa-solid fa-bed"> </i> Locations de vacances
-          <i class="fa-solid fa-house"> </i> Activités
-          <i class="fa-solid fa-ticket"> </i> Restaurant
-          <i class="fa-solid fa-utensils"></i> Forums de voyage
-          <i class="fa-solid fa-comments"></i> Plus
-          <i class="fa-solid fa-ellipsis"> </i>
-        </nav>
       </section>
       <section class="photo-container" alt="photos-ville">
         <div class="bloc-left">
-          <img src="./assets/images/137529-Helsinki-Cathedral.avif" />
+          <img src="./assets/images/centralpic/lac.jpg" />
         </div>
         <div class="bloc-right">
           <img
-            class="museum-pic"
-            src="./assets/images/musée-national.jpg"
-          /><img class="pool-pic" src="./assets/images/allas-sea-pool.jpg" />
+            class="white-one-pic"
+            src="./assets/images/centralpic/lutherienne.jpg"
+          /><img
+            class="red-one-pic"
+            src="./assets/images/centralpic/uspenski.jpg"
+          />
         </div>
       </section>
-      <h4>
-        Europe > Finlande > Uusimaa > Helsinki
-        <i class="fa-solid fa-caret-down"></i>
-        <span>Visiter:Helsinki</span>
-      </h4>
+      <div class="localisation-div">
+        <span localisation-title-span
+          ><h4 class="localisation-title">
+            Europe > Finlande > Uusimaa > Helsinki<i
+              class="fa-solid fa-caret-down"
+            ></i>
+            Visiter : helsinki
+          </h4></span
+        >
+      </div>
       <section class="third-section">
         <div class="Bloc-text">
           <h2>Helsinki : informations</h2>
@@ -225,6 +248,43 @@
                   ><i class="fa-solid fa-circle-half-stroke"></i> 2824
                 </div>
                 <p>Sentiers historiques, Parcs</p>
+              </div>
+            </div>
+          </div>
+          <div class="rest-div">
+            <div class="left-part">
+              <h3>Se reposer</h3>
+              <p>Un mélange de charme, de modernité et de valeurs sûres.</p>
+              <a href="Tout afficher">Tout afficher</a>
+              <div class="rest-pics">
+                <div class="relativ-rest-pics">
+                  <img src="./assets/images/Se reposer/lapland.jpeg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/hotel-f6.jpg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img
+                    src="./assets/images/Se reposer/the-folks-hotel-konepaja.jpg"
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/kamp.jpg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/fabian.jpg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img
+                    src="./assets/images/Se reposer/solo-sokos-hotel-torni.jpg"
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/lilla.jpeg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img
+                    src="./assets/images/Se reposer/hotel_indigo_helsinki_boulevard_exterior_1600x400-600x300.jpg"
+                  />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/katajanokka.jpg" />
+                  <i class="fa-regular fa-heart"></i>
+                  <img src="./assets/images/Se reposer/haven.jpg" />
+                  <i class="fa-regular fa-heart"></i>
+                </div>
               </div>
             </div>
           </div>
