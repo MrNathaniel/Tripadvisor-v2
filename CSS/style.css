@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+a {
+  height: 22px;
+  color: #000000;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -94,7 +104,9 @@ header {
 }
 
 section {
-  border: blue solid 2px;
+  /*border: blue solid 2px;*/
+  width: 1135px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -110,7 +122,7 @@ h1 {
 }*/
 
 .photo-container {
-  border: solid greenyellow 2px;
+  /*border: solid greenyellow 2px;*/
   width: 1137px;
   height: 431px;
   margin: 0 auto;
@@ -212,17 +224,21 @@ p {
 .not-miss-container {
   margin-top: 100px;
   width: 1135px;
-  height: 1200px;
-  border: solid orange 2px;
+
+  /*border: solid orange 2px;*/
+  margin: 0 auto;
 }
 
 h3 {
   font-size: 24px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.Bloc-text {
+  margin-bottom: 75px;
+}
 
 .have-fun {
-  border: solid purple 2px;
+  /*border: solid purple 2px;*/
   height: 300px;
   display: flex;
   flex: 1;
@@ -234,6 +250,8 @@ h3 {
   flex: 3;
   overflow-x: hidden;
   overflow: scroll;
+  width: calc(150% / 3);
+  flex-shrink: 0;
 }
 
 .have-fun-pics::-webkit-scrollbar  /* chrome*/ {
@@ -245,10 +263,10 @@ h3 {
   scrollbar-width: none; /* Firefox */
 }
 
-.have-fun h5 {
+/*.have-fun h5 {
   font-weight: bold;
   font-size: 18px;
-}
+}*/
 
 .rating {
   width: 100%;
@@ -280,22 +298,18 @@ h3 {
 .not-miss-bloc-left p {
   padding-right: 78px;
   padding-top: 37px;
-  width: 100%;
 }
 .have-fun img {
   object-fit: cover;
-  width: 270px;
+  /*width: 270px;*/
+
   height: 200px;
   border-radius: 10px;
   padding-right: 5px;
 }
-.caroussel-pic {
-  width: 270px;
-  flex-shrink: 0;
-}
+
 .relativ-div {
   position: relative;
-  flex-shrink: 0;
 }
 
 .relativ-div-hidden {
@@ -317,7 +331,7 @@ h3 {
 }
 
 .rest-div {
-  border: solid 2px violet;
+  /* border: solid 2px violet;*/
   display: flex;
   height: 300px;
   width: 1135px;
@@ -333,14 +347,25 @@ h3 {
   display: flex;
   flex: 3;
   height: 100%;
-  gap: 5px;
   overflow-x: hidden;
   overflow: scroll;
 }
+
+.hotel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: calc((100% / 3));
+  flex-shrink: 0;
+}
+
 .hotel img {
   height: 204px;
-  width: 268px;
-  border-radius: 5px;
+  width: 100%;
+  border-radius: 10px;
+  padding-right: 5px;
+  object-fit: cover;
 }
 
 .rest-pics::-webkit-scrollbar  /* chrome*/ {
@@ -360,4 +385,102 @@ h3 {
 .left-part p {
   padding-top: 37px;
   padding-right: 78px;
+}
+
+.partenariat {
+  width: 1135px;
+  height: 188px;
+  background-color: #f2f1ec;
+  margin-top: 67px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  display: flex;
+}
+
+.turquie {
+  height: 160px;
+  width: 160px;
+  padding-left: 17px;
+  transform: rotate(-10deg);
+  border-radius: 10px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.partenariat-bloc {
+  padding-left: 34px;
+}
+
+.partenariat-p {
+  font-size: 14px;
+  background-color: #e0e0e0;
+  margin-left: 34px;
+  margin-top: 34px;
+  width: 212px;
+  height: 13px;
+  margin-bottom: 32px;
+}
+.partenariat-h2 {
+  padding-left: 34px;
+  font-size: 20px;
+  width: 100%;
+}
+.partenariat-h5 {
+  padding-left: 34px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.partenariat-button {
+  margin-right: 25px;
+  margin-top: 124px;
+  margin-left: 144px;
+  width: 135px;
+  height: 48px;
+  border-radius: 30px;
+  background-color: white;
+}
+.partenariat-button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+footer {
+  height: 155px;
+  width: 100%;
+  background-color: #faf1ed;
+  margin-top: 27px;
+}
+.footer-content {
+  width: 1135px;
+}
+.footer-logo {
+  padding-top: 30px;
+  display: flex;
+}
+.footer-icon {
+  height: 80px;
+  width: 84px;
+}
+.copyright-p {
+  font-size: 12px;
+  padding-left: 4px;
+  padding-top: 22px;
+}
+.footer-a-span-1 {
+  display: flex;
+  justify-content: space-between;
+  width: 472px;
+  height: 14px;
+  margin-left: 85px;
+}
+
+.footer-a-span-2 {
+  padding-top: 4px;
+  display: flex;
+  justify-content: space-between;
+  width: 645px;
+  margin-left: 85px;
+  height: 14px;
 }
