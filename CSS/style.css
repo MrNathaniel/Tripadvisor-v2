@@ -196,7 +196,7 @@ h1 {
 
 .localisation-div-span {
   width: 100%;
-  justify-content: space-between;
+
   height: 13px;
 }
 
@@ -463,17 +463,21 @@ footer {
   height: 80px;
   width: 84px;
 }
+
+.footer-text-div {
+  width: 660px;
+}
 .copyright-p {
   font-size: 12px;
   padding-left: 4px;
-  padding-top: 22px;
+  padding-bottom: 6px;
+  padding-top: 20px;
 }
 .footer-a-span-1 {
   display: flex;
   justify-content: space-between;
   width: 472px;
   height: 14px;
-  margin-left: 85px;
 }
 
 .footer-a-span-2 {
@@ -481,6 +485,27 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 645px;
-  margin-left: 85px;
+
   height: 14px;
+}
+.last-p {
+  padding: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+.button-1 {
+  background-color: white;
+  height: 30px;
+  border-radius: 15px;
+  width: 150px;
+  margin-left: 40px;
+}
+
+.button-2 {
+  background-color: white;
+  height: 30px;
+  border-radius: 15px;
+  width: 150px;
+  margin-top: 40px;
+  margin-left: 10px;
 }
