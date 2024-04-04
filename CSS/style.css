@@ -155,12 +155,12 @@ h1 {
 
 .bloc-right img {
   width: 100%;
-  /*height: 50%;*/
+  height: 50%;
   object-fit: cover;
   /*object-position: 50% 75%;*/
 }
 .white-one-pic {
-  height: 213px;
+  /* height: 213px; */
   object-position: 25% 75%;
   padding-bottom: 2px;
   border-top-right-radius: 20px;
@@ -174,19 +174,20 @@ h1 {
 
 .localisation-div {
   height: 13px;
-  display: flex;
-  justify-content: space-between;
+
   width: 1135px;
   margin: 30px auto 30px auto;
 }
 
 .localisation-title-span {
+  display: flex;
   width: 100%;
-  /*justify-content: space-between;*/
+  justify-content: space-between;
 }
 .localisation-title {
   width: 100%;
   height: 13px;
+  font-size: 12px;
 }
 
 /*.fa-caret-down {
@@ -198,6 +199,12 @@ h1 {
   width: 100%;
 
   height: 13px;
+}
+
+.under-bloc-right {
+  font-size: 12px;
+  height: 13px;
+  width: 100px;
 }
 
 .third-section {
@@ -241,7 +248,6 @@ h3 {
   /*border: solid purple 2px;*/
   height: 300px;
   display: flex;
-  flex: 1;
   margin-bottom: 88px;
 }
 
@@ -250,7 +256,7 @@ h3 {
   flex: 3;
   overflow-x: hidden;
   overflow: scroll;
-  width: calc(150% / 3);
+
   flex-shrink: 0;
 }
 
@@ -288,6 +294,7 @@ h3 {
 .not-miss-bloc-left {
   height: 200px;
   width: 275px;
+  flex: 1;
 }
 .not-miss-bloc-left h3 {
   padding-right: 86px;
@@ -299,9 +306,14 @@ h3 {
   padding-right: 78px;
   padding-top: 37px;
 }
+
+.have-fun-pics {
+  width: calc((100% - 10px / 3));
+}
+
 .have-fun img {
   object-fit: cover;
-  /*width: 270px;*/
+  width: 270px;
 
   height: 200px;
   border-radius: 10px;
@@ -326,10 +338,17 @@ h3 {
   color: black;
 }
 .award img {
-  height: 20px;
-  width: 20px;
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
-
 .rest-div {
   /* border: solid 2px violet;*/
   display: flex;
@@ -349,23 +368,43 @@ h3 {
   height: 100%;
   overflow-x: hidden;
   overflow: scroll;
+  width: calc((100% / 3));
 }
 
-.hotel {
+.rest-pics-relativ {
   position: relative;
   display: flex;
   flex-direction: column;
   height: 300px;
-  width: calc((100% / 3));
+
   flex-shrink: 0;
 }
 
-.hotel img {
-  height: 204px;
-  width: 100%;
+.img-div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.rest-pics-relativ img {
+  height: 200px;
+  width: 270px;
   border-radius: 10px;
   padding-right: 5px;
   object-fit: cover;
+}
+
+.award img {
+  object-fit: cover;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .rest-pics::-webkit-scrollbar  /* chrome*/ {
